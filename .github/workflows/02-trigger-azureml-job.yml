@@ -30,4 +30,4 @@ jobs:
         az configure --defaults workspace="${{ github.event.inputs.aml_workspace }}"
     - name: Trigger Azure Machine Learning job
       run: |
-        az ml job create --file src/job.yml
+        az ml job create --file ../../src/job.yml
